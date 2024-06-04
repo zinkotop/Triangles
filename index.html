@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculs de Triangles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculer les Angles</h1>
+        <div class="input-group">
+            <label for="sideA">Côté A:</label>
+            <input type="number" id="sideA" placeholder="Entrez le côté A">
+        </div>
+        <div class="input-group">
+            <label for="sideB">Côté B:</label>
+            <input type="number" id="sideB" placeholder="Entrez le côté B">
+        </div>
+        <div class="input-group">
+            <label for="sideC">Côté C:</label>
+            <input type="number" id="sideC" placeholder="Entrez le côté C">
+        </div>
+        <button onclick="calculateAngles()">Calculer les Angles</button>
+        <p id="resultAngles" class="result"></p>
+    </div>
+
+    <div class="container">
+        <h1>Calculer l'Hypoténuse</h1>
+        <div class="input-group">
+            <label for="sideHypA">Côté A:</label>
+            <input type="number" id="sideHypA" placeholder="Entrez le côté A">
+        </div>
+        <div class="input-group">
+            <label for="sideHypB">Côté B:</label>
+            <input type="number" id="sideHypB" placeholder="Entrez le côté B">
+        </div>
+        <button onclick="calculateHypotenuse()">Calculer l'Hypoténuse</button>
+        <p id="resultHypotenuse" class="result"></p>
+    </div>
+
+    <div class="container">
+        <h1>Calculer l'Aire</h1>
+        <div class="input-group">
+            <label for="base">Base:</label>
+            <input type="number" id="base" placeholder="Entrez la base">
+        </div>
+        <div class="input-group">
+            <label for="height">Hauteur:</label>
+            <input type="number" id="height" placeholder="Entrez la hauteur">
+        </div>
+        <button onclick="calculateArea()">Calculer l'Aire</button>
+        <p id="resultArea" class="result"></p>
+    </div>
+
+    <div class="container">
+        <h1>Classer le Triangle</h1>
+        <div class="input-group">
+            <label for="sideClassA">Côté A:</label>
+            <input type="number" id="sideClassA" placeholder="Entrez le côté A">
+        </div>
+        <div class="input-group">
+            <label for="sideClassB">Côté B:</label>
+            <input type="number" id="sideClassB" placeholder="Entrez le côté B">
+        </div>
+        <div class="input-group">
+            <label for="sideClassC">Côté C:</label>
+            <input type="number" id="sideClassC" placeholder="Entrez le côté C">
+        </div>
+        <button onclick="classifyTriangle()">Classer le Triangle</button>
+        <p id="resultClassification" class="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
