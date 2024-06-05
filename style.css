@@ -1,28 +1,30 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-color: #6a0b6a;
     margin: 0;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
 }
 
 .container {
     background: #ffffff;
-    gap: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 20px;
-    height: 300px;
-    width: 300px;
+    width: 80%;
 }
+pre {
+    white-space: pre-wrap;       
+    word-wrap: break-word;       
+    overflow: auto;              
+    font-family: monospace;   
+    text-align: left;   
+}
+
 .input-group {
     margin: 10px 0;
 }
@@ -46,9 +48,15 @@ button {
     justify-content: center;
     flex-direction: column;
     background-color: #6a0b6a;
-    height: 10%;
+    height: 70%;
     width: 70%;
     top: 0;
     color: #ffffff;
     border-radius: 0.5em;
 }
+table{
+    margin-left: 23%;
+    width: 50%;
+    border-collapse: collapse;
+}
+
